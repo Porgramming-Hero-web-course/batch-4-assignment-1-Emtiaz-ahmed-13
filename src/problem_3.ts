@@ -2,9 +2,11 @@
 function countWordOccurrences(sentence: string, word: string): number {
   return sentence
     .toLowerCase()
-    .replace(/[^\w\s]/g, "")
-    .split(/\s+/)
-    .filter((item) => item === word.toLowerCase()).length;
+    .split(" ")
+
+    .filter(function (element) {
+      return element === word.toLowerCase();
+    }).length;
 }
 
 console.log(
