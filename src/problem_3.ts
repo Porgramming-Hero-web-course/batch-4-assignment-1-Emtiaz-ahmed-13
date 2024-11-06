@@ -1,12 +1,10 @@
 //problem -3
 function countWordOccurrences(sentence: string, word: string): number {
   return sentence
-    .toLowerCase()
+    .toLowerCase() // convert lowercase for case insensitive
     .split(" ")
-
-    .filter(function (element) {
-      return element === word.toLowerCase();
-    }).length;
+    .map((element) => element.replace(/[^\w]/g, "")) // remove special characters
+    .filter((element) => element === word.toLowerCase()).length;
 }
 
 console.log(
