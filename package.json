@@ -1,0 +1,13 @@
+{
+  "name": "batch-4-assignment-1-Emtiaz-ahmed-13",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/problem_6.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "typescript": "^5.6.3"
+  }
+}
