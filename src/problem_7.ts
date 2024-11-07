@@ -13,5 +13,5 @@ class Car {
     return currentYear - this.year;
   }
 }
-// const myCar = new Car("Honda", "civic", 2018);
-// console.log(`${myCar.getCarAge()} (assuming current year is 2024)`);
+const myCar = new Car("Honda", "civic", 2018);
+console.log(`${myCar.getCarAge()} (assuming current year is 2024)`);
